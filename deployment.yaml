@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-placement-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: student-placement
+  template:
+    metadata:
+      labels:
+        app: student-placement
+    spec:
+      containers:
+        - name: student-placement
+          image: deepasri111/student-placement-portal:v1
+          ports:
+            - containerPort: 80

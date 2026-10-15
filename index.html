@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusHire | Student Placement Portal</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #202c43;
+}
+header {
+  background: #172554;
+  color: white;
+  padding: 24px 7%;
+}
+header h1 { margin: 0 0 8px; }
+nav { margin-top: 18px; }
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+main { padding: 28px 7%; }
+.hero {
+  background: #dbeafe;
+  padding: 28px;
+  border-radius: 14px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #17255412;
+}
+.stat { color: #2563eb; font-size: 28px; font-weight: bold; }
+.companies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 16px;
+}
+.tag {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>CampusHire</h1>
+  <p>Student Placement and Career Opportunities Portal</p>
+  <nav>
+    <a href="#statistics">Statistics</a>
+    <a href="#companies">Companies</a>
+    <a href="#drives">Recruitment Drives</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h2>Your Career Starts Here!</h2>
+    <p>Explore placement opportunities, discover leading companies,
+    and prepare for your dream job.</p>
+  </section>
+
+  <section id="statistics">
+    <h2>Placement Statistics</h2>
+    <div class="stats">
+      <div class="card"><div class="stat">850+</div>Students Placed</div>
+      <div class="card"><div class="stat">65+</div>Recruiting Companies</div>
+      <div class="card"><div class="stat">12 LPA</div>Highest Package</div>
+      <div class="card"><div class="stat">6.5 LPA</div>Average Package</div>
+    </div>
+  </section>
+
+  <section id="companies">
+    <h2>Featured Companies</h2>
+    <div class="companies">
+      <div class="card">
+        <h3>TCS</h3>
+        <p>Role: Graduate Trainee</p>
+        <p>Eligibility: B.E./B.Tech, 60% or above</p>
+        <span class="tag">Hiring</span>
+      </div>
+      <div class="card">
+        <h3>Infosys</h3>
+        <p>Role: Systems Engineer</p>
+        <p>Eligibility: Eligible graduating students</p>
+        <span class="tag">Hiring</span>
+      </div>
+      <div class="card">
+        <h3>Accenture</h3>
+        <p>Role: Associate Software Engineer</p>
+        <p>Eligibility: As per company criteria</p>
+        <span class="tag">Upcoming</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="drives">
+    <h2>Upcoming Recruitment Drives</h2>
+    <div class="card">
+      <h3>TCS Campus Recruitment</h3>
+      <p>Date: 15 November 2026</p>
+      <p>Venue: University Placement Auditorium</p>
+      <p>Bring your resume and college ID card.</p>
+    </div>
+    <div class="card">
+      <h3>Infosys Recruitment Drive</h3>
+      <p>Date: 22 November 2026</p>
+      <p>Venue: Computer Science Block</p>
+      <p>Check the eligibility criteria before applying.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="card" style="margin-top:24px">
+    <h2>Placement Cell Contact</h2>
+    <p>Email: placement@university.edu</p>
+    <p>Visit the placement cell for assistance and announcements.</p>
+  </section>
+</main>
+<footer>CampusHire | University Placement Cell | 2026</footer>
+</body>
+</html>

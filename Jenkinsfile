@@ -15,8 +15,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker buildx build --provenance=false --load -t deepasri111/student-placement-portal:%BUILD_NUMBER% -t deepasri111/student-placement-portal:latest .'
-            }
+               bat 'docker build -t deepasri111/student-placement-portal:%BUILD_NUMBER% -t deepasri111/student-placement-portal:latest .'            }
         }
 
         stage('Push Image to Docker Hub') {
